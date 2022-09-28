@@ -1,0 +1,609 @@
+/* compulsory */
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    color: #12383b;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h6 {
+    font-family: "Roboto", sans-serif;
+    color: #12383b;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #12383b;
+    font-size: 17px;
+    margin: 1em 0;
+}
+.img-width {
+    width: 100%;
+}
+
+
+/* NAVBAR */
+/* sticky/fixed navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; 
+    z-index: 99;
+    background: #d3eae9;
+  }
+.nav-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+.menu-items ul {
+    display: flex;
+    gap: 2rem;
+}
+#logo {
+    font-size: 35px;
+    font-weight: 700;
+}
+.ham {
+    font-size: 3rem;
+    display: none;
+}
+/* END NAVBAR */
+
+
+/********** HERO SECTION ***********/
+.hero_text {
+    font-size: 1rem ;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.first_btn {
+    vertical-align: top;
+    display: inline-block;
+    height: 38px;
+    padding: 0px 25px;
+    border: 1px solid #2b6357;
+    border-radius: 19px;
+    font-size: 12px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    /* margin-right: 10px; */
+}
+.hero-btn {
+    margin-right: 15px;
+}
+
+.second_btn {
+    vertical-align: top;
+    display: inline-block;
+    height: 38px;
+    padding: 0px 25px;
+    color: white;
+    background-color: #2b6357;
+    border: 1px solid #2b6357;
+    border-radius: 19px;
+    font-size: 12px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.hero {
+    position: relative;
+    background: #d3eae9;
+    border-color: #d3eae9;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.hero_section_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 600px;
+}
+
+.hero_text-content {
+    max-width: 540px;
+    padding: 100px 0;
+}
+
+.hero_image {
+    /* max-width: 540px; */
+    height: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+.hero_image img {
+    width: 100%;
+    height: 110%;
+}
+/********** END HERO SECTION ***********/
+
+
+
+/********** STATS SECTION *****************/
+.stats_container {
+    margin-top: 14vh;
+    text-align: center;
+}
+.stats_header h1 {
+    font-size: 48px;
+}
+.stats_header p {
+    font-size: 15px;
+}
+.stats_container img {
+    margin: 2.5rem 0;
+}
+.stats_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.stats_box > div {
+    max-width: 350px;
+}
+.stats_box > div h2 {
+    font-size: 4rem;
+}
+/*********** END STATS SECTION ***************/
+
+
+
+/*********** MARKETING STATS SECTION ***************/
+.marketing_container {
+    background: #d3eae9;
+    width: 100%;
+    margin-top: 12vh;
+    padding: 5rem 15px;
+}
+.marketing_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.marketing_boxes > div {
+    max-width: 600px;
+}
+.marketing_boxes > div:nth-child(1) {
+    max-width: 400px;
+}
+.marketing_boxes > div img {
+    width: 100%;
+}
+/*********** END MARKETING STATS SECTION ***************/
+
+
+/*********** BALANCE STATS SECTION ***************/
+.balance_container {
+    background: #ffffff;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 2rem 15px;
+}
+.balance_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* background: red; */
+}
+.balance_boxes > div {
+    max-width: 550px;
+}
+.balance_boxes > div:nth-child(2) {
+    max-width: 550px;
+}
+/*********** END BALANCE STATS SECTION ***************/
+
+
+/************ STRESS LESS SECTION *****************/
+.strs_lss_section {
+    background: #d3eae9;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 8rem 15px;
+}
+.strs_lss_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.strs_lss_box > div {
+    max-width: 550px;
+}
+
+.strs_lss_box > div:nth-child(1){
+    overflow: hidden;
+    max-width: 700px;
+    box-shadow: 0px 0px 15px #2b6357;
+    height: 500px;
+    border-radius: 40px 0 40px 0;
+    transition: .5s ease-in-out;
+}
+.strs_lss_box > div:nth-child(1):hover {
+    box-shadow: 0px 0px 40px #2b6357;
+    border-radius: 20px 0 20px 0;
+    transition: .5s ease-in-out;
+}
+/************ END STRESS LESS SECTION *****************/
+
+
+
+
+
+/* footer */
+/* background color variant one #1d262d */
+/* tiny variant color 869fb2  */
+
+
+footer {
+    margin: 0;
+    min-height: 300px;
+    width: 100%;
+    background: #12383b;
+    color: #aaa;
+    padding-top: 3rem;
+}
+.footer-box-models {
+    
+    max-width: 1400px;
+    margin: 0px  auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer-box-models ul {
+    list-style: none;
+}
+.footer-box-models ul li {
+    margin: 7px 0;
+    font-size: .9rem;
+}
+.list-heading {
+    color: #ddd;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.ruler {
+    opacity: 0.3;
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-top: 30px;
+
+}
+.copyright {
+    background: inherit;
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.copyright p {
+    color: grey;
+    font-size: .8rem;
+}
+
+.footer-tabs {
+    max-width: 100%;
+    margin: 0px auto;
+    background: #2b6357;
+    color: #ccc;
+    padding: 15px 0;
+}
+
+.footer-tabs ul {
+    display: flex;
+    font-size: .8rem;
+    gap: 40px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
+
+
+
+@media (max-width: 750px) {
+h1  {
+        font-family: "Roboto", serif;
+        color: #12383b;
+        font-size: 3.5rem;
+        line-height: 70px;
+    }
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        width: 100%;
+                        margin: 5px 0;
+                    }
+    
+
+/* NAVBAR */
+/* sticky/fixed navbar */
+#navbar {
+    overflow: visible;
+    background-color: #f1f1f1;
+    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; 
+    z-index: 99;
+    background: #d3eae9;
+  }
+.nav-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-items {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position:absolute;
+    background: white;
+    box-shadow: 0px 0px 20px grey;
+    width: 100%;
+    top: 5rem;
+    padding: 4rem 0;
+    transition: .5s ease-in-out;
+}
+.menu-items ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-items ul li {
+    padding: .3rem 0;
+    width: 100%;
+    text-align: center;
+}
+.menu-items ul li:hover {
+    border-bottom: 1px solid #000;
+}
+#logo {
+    font-size: 35px;
+    font-weight: 700;
+}
+.ham {
+    font-size: 2.5rem;
+    display: block;
+}
+.closeHam {
+    display: none;
+}
+/* END NAVBAR */
+
+
+  
+    /* HERO SECTION */
+    .hero_section_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        padding: 0;
+    }
+
+    .hero_text-content {
+        max-width: 540px;
+        padding: 80px 20px;
+    }
+    .hero_image {
+        /* max-width: 540px; */
+        height: 100%;
+        overflow-x: visible;
+        overflow-y: visible;
+        background: white;
+    }
+    .hero_image img {
+        width: 100%;
+        height: auto;
+    }
+/* END HERO SECTION */
+
+    
+/*********** BALANCE STATS SECTION ***************/
+.balance_container {
+    background: #ffffff;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 2rem 15px;
+}
+.balance_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* background: red; */
+}
+.balance_boxes > div {
+    max-width: 700px;
+}
+.balance_boxes > div:nth-child(2) {
+    max-width: 400px;
+}
+
+/*********** END BALANCE STATS SECTION ***************/
+
+
+/************ STRESS LESS SECTION *****************/
+.strs_lss_section {
+    background: #d3eae9;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 8rem 15px;
+}
+.strs_lss_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.strs_lss_box > div {
+    max-width: 550px;
+}
+
+.strs_lss_box > div:nth-child(1){
+    overflow: hidden;
+    max-width: 700px;
+    box-shadow: 0px 0px 5px #2b6357;
+    height: 300px;
+    border-radius: 40px 0 40px 0;
+    transition: .5s ease-in-out;
+}
+.strs_lss_box > div:nth-child(1):hover {
+    box-shadow: 0px 0px 40px #2b6357;
+    border-radius: 20px 0 20px 0;
+    transition: .5s ease-in-out;
+}
+/************ END STRESS LESS SECTION *****************/
+
+/* footer */
+/* background color variant*/
+/* */
+
+footer {
+    margin: 0;
+    min-height: 300px;
+    width: 100%;
+    background: #12383b;
+    color: #aaa;
+    padding-top: 3rem;
+}
+.footer-box-models {
+    max-width: 1400px;
+    margin: 0px  auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-box-models ul {
+    list-style: none;
+    padding: 1rem;
+}
+.footer-box-models ul li {
+    margin: 7px 0;
+    font-size: .8rem;
+}
+.list-heading {
+    color: #ddd;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.ruler {
+    opacity: 0.3;
+    max-width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+
+}
+.copyright {
+    background: inherit;
+    max-width: 90%;
+    font-size: .8rem;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-tabs {
+    max-width: 100%;
+    margin: 0px auto;
+    background: #2b6357;
+    color: #ccc;
+    padding:1.3rem 5px;
+}
+
+.footer-tabs ul {
+    display: flex;
+    font-size: .6rem;
+    gap: .6rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
+
+
+}
